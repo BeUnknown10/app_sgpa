@@ -122,7 +122,7 @@ smtp_password = 'VEDM3Qg7mnC2qz4H'
 sender_email = 'SGPA suggestioners' 
 recipient_email = 'temporarymail673@gmail.com'  
 
-if submit2:
+if button2:
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = recipient_email
