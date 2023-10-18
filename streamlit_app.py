@@ -6,7 +6,7 @@ st.text('By Mohammad Saad')
 branches = ['Civil', 'Electrical', 'Mechanical', 'EnTC', 'CSE', 'IT']
 semesters = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
 ITI = ['Chemistry',3, 'Mechanics',3, 'BcomIT',3, 'Engg Exploration',2, 'M1',4, 'Lab Mechanics',1,'Lab Chemistry',1, 'lab BcomIT',1]
-ITII = ['Communication Skills',2,'M2',4, 'EGD',2 ,'Physics',4,'elective1 (3 credit)',3,'Lab Elective(for BEE)',1,'Lab Communication Skills',1,'Lab Computer Workshop',2, 'Lab EGD',1,'Lab Physics',1]
+ITII = ['Communication Skills',2,'M2',4, 'EGD',2 ,'Physics',4,'elective1 (3 credit)',3,'Lab Elective(for BEE/BCE)',1,'Lab Communication Skills',1,'Lab Computer Workshop',2, 'Lab EGD',1,'Lab Physics',1]
 ITIII = ['M3',3, 'DMS',3, 'DS',3, 'CN',3, 'OOP',3,'DEM',3, 'elective1 (3 credit)',3, 'elective2 (3 credit)',3, 'Lab DS ',1,'Lab CN',1,'Lab OOP',1,'Lab DEM',1]
 ITIV = ['M4',4,'DAA',3,'DBMS',3,'OS',3,'IOT',3,'elective1',3,'elective2',3,'elective3',3,'lab OS',1,'lab DBMS',1,'lab DAA',1,'lab IOT',1]
 ITV = ['AI',3, 'ML',3, 'TOC',3, 'SE',3, 'elective1',3, 'elective2',3, 'elective3',3]
