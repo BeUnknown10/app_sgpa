@@ -1,4 +1,7 @@
 import streamlit as st
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 st.subheader('GECA SGPA CALCULATOR')
 st.text('By Mohammad Saad')
@@ -109,6 +112,39 @@ if flag == 1 and semester:
 
 st.text('In case of any reports or suggestions kindly Mail')
 st.text('saadiqbal1921@gmail.com')
-st.text_area('suggestions')
+text = st.text_area('suggestions')
 button2 = st.button('submit')
+
+smtp_server = 'smtp-relay.brevo.com'
+smtp_port = 587 
+smtp_username = 'saadiqbal1921@geca.ac.in'  
+smtp_password = 'VEDM3Qg7mnC2qz4H'  
+sender_email = 'SGPA suggestioners' 
+recipient_email = 'temporarymail673@gmail.com'  
+
+msg = MIMEMultipart()
+msg['From'] = sender_email
+msg['To'] = recipient_email
+msg['Subject'] = 'Subject of the email'
+
+# Email content (plain text)
+email_content = text
+
+# Attach the email content to the message
+msg.attach(MIMEText(email_content, 'plain'))
+
+# Connect to the SMTP server
+try:
+    server = smtplib.SMTP(smtp_server, smtp_port)
+    server.starttls()  # Enable TLS encryption
+    server.login(smtp_username, smtp_password)
+
+    # Send the email
+    server.sendmail(sender_email, recipient_email, msg.as_string())
+    print('Email sent successfully')
+except Exception as e:
+    print('Error sending email:', str(e))
+finally:
+    server.quit() 
+
 
