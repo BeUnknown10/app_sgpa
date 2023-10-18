@@ -1,7 +1,5 @@
 import streamlit as st
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+
 
 st.subheader('GECA SGPA CALCULATOR')
 st.text('By Mohammad Saad')
