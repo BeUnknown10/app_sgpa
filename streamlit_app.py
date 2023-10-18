@@ -115,12 +115,12 @@ st.text('saadiqbal1921@gmail.com')
 text = st.text_area('suggestions')
 button2 = st.button('submit')
 
-smtp_server = 'smtp-relay.brevo.com'
-smtp_port = 587 
-smtp_username = 'saadiqbal1921@geca.ac.in'  
-smtp_password = 'VEDM3Qg7mnC2qz4H'  
-sender_email = 'SGPA suggestioners' 
-recipient_email = 'temporarymail673@gmail.com'  
+# smtp_server = 'smtp-relay.brevo.com'
+# smtp_port = 587 
+# smtp_username = 'saadiqbal1921@geca.ac.in'  
+# smtp_password = 'VEDM3Qg7mnC2qz4H'  
+# sender_email = 'SGPA suggestioners' 
+# recipient_email = 'temporarymail673@gmail.com'  
 
 # if button2 and text not Null:
 #     msg = MIMEMultipart()
