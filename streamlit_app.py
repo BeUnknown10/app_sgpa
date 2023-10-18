@@ -122,29 +122,31 @@ smtp_password = 'VEDM3Qg7mnC2qz4H'
 sender_email = 'SGPA suggestioners' 
 recipient_email = 'temporarymail673@gmail.com'  
 
-msg = MIMEMultipart()
-msg['From'] = sender_email
-msg['To'] = recipient_email
-msg['Subject'] = 'Subject of the email'
+if submit2:
+    msg = MIMEMultipart()
+    msg['From'] = sender_email
+    msg['To'] = recipient_email
+    msg['Subject'] = 'Subject of the email'
 
 # Email content (plain text)
-email_content = text
+    email_content = text
 
 # Attach the email content to the message
-msg.attach(MIMEText(email_content, 'plain'))
+    msg.attach(MIMEText(email_content, 'plain'))
 
 # Connect to the SMTP server
-try:
-    server = smtplib.SMTP(smtp_server, smtp_port)
-    server.starttls()  # Enable TLS encryption
-    server.login(smtp_username, smtp_password)
 
-    # Send the email
-    server.sendmail(sender_email, recipient_email, msg.as_string())
-    print('Email sent successfully')
-except Exception as e:
-    print('Error sending email:', str(e))
-finally:
-    server.quit() 
+    try:
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()  # Enable TLS encryption
+        server.login(smtp_username, smtp_password)
+
+    
+        server.sendmail(sender_email, recipient_email, msg.as_string())
+        st.success('Email sent successfully')
+    except Exception as e:
+        st.error('Error sending email:', str(e))
+    finally:
+        server.quit() 
 
 
