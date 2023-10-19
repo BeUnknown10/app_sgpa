@@ -107,7 +107,7 @@ if flag == 1 and semester and branch:
     if calculate:
         grade_num = calc(selected_grades)
         m.subheader(f'SGPA : {sgpa:.3f}')
-        n.subheader(f'credits : {total}'
+        n.subheader(f'credits : {total}')
 
 st.text('In case of any reports or suggestions kindly Mail')
 st.text('saadiqbal1921@gmail.com')
