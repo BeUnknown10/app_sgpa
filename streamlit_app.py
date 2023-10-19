@@ -54,7 +54,7 @@ try:
 except Exception as e:
     st.text('Sorry for the inconvenience, we are working on it')
     st.text(e)
-
+total = 0
 sub_count = 0
 if flag == 1 and semester and branch:
     
@@ -77,8 +77,9 @@ if flag == 1 and semester and branch:
         global sub_count
         global sgpa
         global grade_num
+        global total
         score = 0
-        total = 0
+       
         for grade in selected_grades:
             if grade == 'A++':
                 grade_num.append(10)
