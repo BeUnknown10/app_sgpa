@@ -110,7 +110,7 @@ if flag == 1 and semester:
 
 st.text('In case of any reports or suggestions kindly Mail')
 st.text('saadiqbal1921@gmail.com')
-text = st.text_area('suggestions')
+text = st.text_area('or write suggestions')
 button2 = st.button('submit')
 
 
