@@ -14,7 +14,7 @@ ITVI = ['AI', 'ML', 'TOC', 'SE', 'elective1', 'elective2', 'sem6']
 ITVII = ['AI', 'ML', 'TOC', 'SE', 'elective1', 'elective2', 'sem7']
 ITVIII = ['AI', 'ML', 'TOC', 'SE', 'elective1', 'elective2', 'sem8']
 grades = ['A++', 'A+', 'A', 'B+', 'B', 'C+', 'C','Not Opted']
-
+grades2 = ['A++', 'A+', 'A', 'B+', 'B', 'C+', 'C']
 sgpa = 0.0
 
 if 'selected_grades' not in st.session_state:
@@ -63,7 +63,7 @@ if flag == 1 and semester and branch:
     selected_grades = [] 
     credits = []
     grade_num = []
-    buffer = [1, 2, 3, 4, 5]
+    buffer = [0,1, 2, 3, 4, 5]
     grade_num = []
     for i in range(len(code)):
         if code[i] in buffer:
