@@ -56,7 +56,7 @@ except Exception as e:
     st.text(e)
 
 sub_count = 0
-if flag == 1 and semester:
+if flag == 1 and semester and branch:
     
 
     selected_grades = [] 
