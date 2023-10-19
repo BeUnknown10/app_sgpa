@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown("""
 <style>
 
-.css-cio0dv.ea3mdgi1 {
+.css-st-emotion-cache-1avcm0n ezrtsby2 {
     visibility: hidden;
 }
 </style>
