@@ -1,6 +1,13 @@
 import streamlit as st
 
+st.markdown("""
+<style>
 
+.css-cio0dv.ea3mdgi1 {
+    visibility: hidden;
+}
+</style>
+""", unsafe_allow_html=True)
 st.subheader('GECA SGPA CALCULATOR')
 st.text('By Mohammad Saad')
 
