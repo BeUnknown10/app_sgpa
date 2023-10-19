@@ -56,7 +56,7 @@ except Exception as e:
 
 sub_count = 0
 total = 0
-
+elective = ['elective1','elective2','elective3']
 if flag == 1 and semester and branch:
     
 
@@ -69,7 +69,10 @@ if flag == 1 and semester and branch:
         if code[i] in buffer:
             credits.append(code[i])
         else:
-            selected_grade = x.selectbox(code[i], grades, key=f'key_{i}')
+            if code[i] in elective:
+                selected_grade = x.selectbox(code[i], grades2, key=f'key_{i}')
+            else:
+                selected_grade = x.selectbox(code[i], grades, key=f'key_{i}')
             if selected_grade == 'Not Opted':
                 sub_count = sub_count + 1
             selected_grades.append(selected_grade)
