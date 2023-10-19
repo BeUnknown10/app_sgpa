@@ -50,6 +50,8 @@ try:
         else:
             flag = 0
             st.text(f'NO DATA PROVIDED FOR {branch} Branch {semester} semester')
+            image_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGy3aoWaehujEt4cFrR47r9UeM7jPJhvottLBpoRl_QTYXCOpCZy5Ydms7p9NKG8UBdFg&usqp=CAU'
+            st.image(image_url, caption='Image from URL', use_column_width=True)
 except Exception as e:
     st.text('Sorry for the inconvenience, we are working on it')
     st.text(e)
